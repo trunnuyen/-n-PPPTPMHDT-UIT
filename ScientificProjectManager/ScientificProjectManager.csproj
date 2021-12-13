@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{74C348C5-33E5-499E-8884-EEE12FCDC04D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ScientificProjectManager</RootNamespace>
+    <AssemblyName>ScientificProjectManager</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\GVLecturerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\GVLecturerForm.Designer.cs">
+      <DependentUpon>GVLecturerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\GVMenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\GVMenuForm.Designer.cs">
+      <DependentUpon>GVMenuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\GVProjectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\GVProjectForm.Designer.cs">
+      <DependentUpon>GVProjectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\GVStudentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\GVStudentForm.Designer.cs">
+      <DependentUpon>GVStudentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\LecturerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\LecturerForm.Designer.cs">
+      <DependentUpon>LecturerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\MenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\MenuForm.Designer.cs">
+      <DependentUpon>MenuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ProjectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ProjectForm.Designer.cs">
+      <DependentUpon>ProjectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ProjectReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ProjectReportForm.Designer.cs">
+      <DependentUpon>ProjectReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\StudentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\StudentForm.Designer.cs">
+      <DependentUpon>StudentForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="View\GVLecturerForm.resx">
+      <DependentUpon>GVLecturerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\GVMenuForm.resx">
+      <DependentUpon>GVMenuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\GVProjectForm.resx">
+      <DependentUpon>GVProjectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\GVStudentForm.resx">
+      <DependentUpon>GVStudentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\LecturerForm.resx">
+      <DependentUpon>LecturerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\MenuForm.resx">
+      <DependentUpon>MenuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ProjectForm.resx">
+      <DependentUpon>ProjectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ProjectReportForm.resx">
+      <DependentUpon>ProjectReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\StudentForm.resx">
+      <DependentUpon>StudentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\repository_16px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\repository_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\repository_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tuition_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\schoolboy_at_a_desk_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout_rounded_left_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\male_16px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\female_16px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tuition_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-uit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_new_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_property_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_document_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_16px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\teacher_16px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\schoolboy_at_a_desk_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sicientific.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sicientific %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\552-5521613_education-png-hd-clipart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\292-2923379_undergraduate-education-logo-for-education-png-transparent-png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play_pie_chart_report_40px.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
